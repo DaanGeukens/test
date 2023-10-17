@@ -1,0 +1,47 @@
+><!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="JsOefening2ClickGame.js" defer="true"></script>
+<title>Insert title here</title>
+<style>
+div {
+	background-color: red; 
+	height:100px; 
+	width: 100px;
+	border-radius: 100px;
+	position: relative;
+  	
+  	animation-duration: 80000s;
+  	animation-iteration-count: infinite;
+}
+
+.vertanim{
+animation-name: verticaal;
+}
+
+.horanim{
+animation-name: horizontaal;
+}
+
+@keyframes horizontaal {
+	0%   {left:0px;}
+  	50%  {left:1140px;}
+  	100%  {left:0px;}
+}
+
+@keyframes verticaal { 
+ 	0%	{top:0px;} 
+ 	50%	{top:440px;} 
+	100%	{top:0px;} 
+ } 
+
+</style>
+</head>
+<body>
+<p><a id="tijdbijhouden"></a></p>
+<p><a id="5pxgroot"></a></p>
+<button id="playagain" onclick="playagain2()" style="display:none">Play Again?</button>
+<div id="test5" class="vertanim" style="background-color:red;height:100px; width: 100px;border-radius: 100px; text-align: center; " onclick="cirkel1()"></div>
+</body>
+</html>
